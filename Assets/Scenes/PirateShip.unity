@@ -2260,7 +2260,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c267d2c60f4bcb4896dc45085dedbbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 543450652925856281}
+  Left_Door: {fileID: 543450652925856281}
+  Right_Door: {fileID: 543450652357424959}
+--- !u!136 &708686346
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708686337}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &755662504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2978,6 +3002,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       insertIndex: -1
       addedObject: {fileID: 708686345}
+    - targetCorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 708686346}
   m_SourcePrefab: {fileID: 100100000, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
 --- !u!4 &869281296 stripped
 Transform:
@@ -5553,9 +5580,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 1
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

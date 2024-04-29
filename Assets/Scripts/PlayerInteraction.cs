@@ -10,6 +10,7 @@ public class PlayerInteraction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -17,16 +18,19 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F)) 
         {
-            print("1");
             Left_Door.ToggleDoor();
             Right_Door.ToggleDoor();
             
         }
     }
 
-    /* void openDoor()
+    void OnCollisionEnter(Collision collision)
     {
-        
+        print(collision.gameObject.name);
+        if (collision.gameObject.name == "Door Collider")
+        {
+            print("collided");
+        }
     }
-    */
+
 }
