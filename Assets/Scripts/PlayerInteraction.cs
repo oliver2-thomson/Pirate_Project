@@ -7,6 +7,7 @@ public class PlayerInteraction : MonoBehaviour
 {
     public OpenDoor Left_Door;
     public OpenDoor Right_Door;
+    public OpenDoor Chest;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             Left_Door.ToggleDoor();
             Right_Door.ToggleDoor();
+            Chest.ToggleDoor();
             
         }
     }
