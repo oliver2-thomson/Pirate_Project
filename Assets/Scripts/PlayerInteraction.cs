@@ -24,9 +24,4 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay(Collision collision)
-    {
-        print("collided");
-    }
-
 }
